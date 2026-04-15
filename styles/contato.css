@@ -1,0 +1,6 @@
+/* styles/contato.css */
+.contato {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    text-align: center;
+}

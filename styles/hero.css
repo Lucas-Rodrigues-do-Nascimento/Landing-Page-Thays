@@ -1,0 +1,11 @@
+/* styles/hero.css */
+.hero {
+    background-color: #f4f4f4;
+    padding-top: 100px;
+}
+
+.hero-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
