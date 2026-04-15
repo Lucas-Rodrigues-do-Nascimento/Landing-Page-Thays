@@ -4,47 +4,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TQS Serviços Contábeis - Contabilidade Profissional</title>
-    <link rel="stylesheet" href="./styles/global.css">
-    <link rel="stylesheet" href="./styles/header.css">
-    <link rel="stylesheet" href="./styles/hero.css">
-    <link rel="stylesheet" href="./styles/servicos.css">
-    <link rel="stylesheet" href="./styles/planos.css">
-    <link rel="stylesheet" href="./styles/contato.css">
-    <link rel="stylesheet" href="./styles/footer.css">
-    <link rel="stylesheet" href="./styles/responsive.css">
+    <title>TQS Serviços Contábeis - Contabilidade Profissional e Confiável</title>
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/hero.css">
+    <link rel="stylesheet" href="styles/servicos.css">
+    <link rel="stylesheet" href="styles/planos.css">
+    <link rel="stylesheet" href="styles/contato.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/responsive.css">
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="container">
-            <img src="./assets/logo.png" alt="Logo TQS Serviços Contábeis" class="logo">
-            <nav>
+            <div class="logo">
+                <img src="./assets/logo.png" alt="Logo TQS Serviços Contábeis">
+            </div>
+            <nav class="nav">
                 <ul>
                     <li><a href="#hero">Início</a></li>
                     <li><a href="#servicos">Serviços</a></li>
                     <li><a href="#planos">Planos</a></li>
+                    <li><a href="#captacao">Abertura de Empresa</a></li>
                     <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
+            <button class="menu-toggle" aria-label="Toggle menu">☰</button>
         </div>
     </header>
 
     <section id="hero" class="hero section">
         <div class="container">
-            <h1 class="section-heading">Bem-vindo à TQS Serviços Contábeis</h1>
-            <p>Contabilidade profissional para o seu negócio crescer com segurança e eficiência.</p>
-            <div class="hero-cards">
+            <div class="hero-content">
+                <h1 class="hero-title">Cresça seu negócio com tranquilidade contábil</h1>
+                <p class="hero-subtitle">Serviços contábeis profissionais para MEI, empresas e empreendedores. Simplifique sua gestão financeira e foque no que realmente importa.</p>
+                <a href="https://wa.me/5547999999999" class="btn btn-primary">Fale Conosco no WhatsApp</a>
+            </div>
+            <div class="hero-cards grid">
                 <div class="card">
-                    <h3>Perfil 1</h3>
-                    <p>Descrição do perfil de cliente.</p>
+                    <h3>Sou MEI / Prestador de Serviços</h3>
+                    <p>Contabilidade simples e acessível para microempreendedores individuais.</p>
+                    <a href="#planos" class="btn btn-secondary">Ver Planos</a>
                 </div>
                 <div class="card">
-                    <h3>Perfil 2</h3>
-                    <p>Descrição do perfil de cliente.</p>
+                    <h3>Sou Pequena ou Média Empresa</h3>
+                    <p>Soluções completas para gestão contábil de empresas em crescimento.</p>
+                    <a href="#planos" class="btn btn-secondary">Ver Planos</a>
                 </div>
                 <div class="card">
-                    <h3>Perfil 3</h3>
-                    <p>Descrição do perfil de cliente.</p>
+                    <h3>Preciso de um Serviço Específico</h3>
+                    <p>Serviços avulsos para necessidades pontuais, como abertura ou regularização.</p>
+                    <a href="#servicos" class="btn btn-secondary">Ver Serviços</a>
                 </div>
             </div>
         </div>
@@ -53,18 +63,24 @@
     <section id="servicos" class="servicos section">
         <div class="container">
             <h2 class="section-heading">Nossos Serviços</h2>
-            <div class="services-list">
-                <div class="service-item">
-                    <h3>Serviço 1</h3>
-                    <p>Descrição do serviço.</p>
+            <div class="servicos-blocks">
+                <div class="servicos-block">
+                    <h3>Serviços Avulsos</h3>
+                    <ul>
+                        <li>Abertura de Empresa</li>
+                        <li>Regularização Fiscal</li>
+                        <li>Consultoria Tributária</li>
+                        <li>Declarações Específicas</li>
+                    </ul>
                 </div>
-                <div class="service-item">
-                    <h3>Serviço 2</h3>
-                    <p>Descrição do serviço.</p>
-                </div>
-                <div class="service-item">
-                    <h3>Serviço 3</h3>
-                    <p>Descrição do serviço.</p>
+                <div class="servicos-block">
+                    <h3>Contabilidade Mensal</h3>
+                    <ul>
+                        <li>Emissão de Notas Fiscais</li>
+                        <li>Controle de Receitas e Despesas</li>
+                        <li>Relatórios Financeiros</li>
+                        <li>Atendimento Personalizado</li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -72,62 +88,87 @@
 
     <section id="planos" class="planos section">
         <div class="container">
-            <h2 class="section-heading">Nossos Planos</h2>
-            <div class="plans-list">
-                <div class="plan-card">
-                    <h3>Plano Básico</h3>
-                    <p class="price">R$ 89/mês</p>
+            <h2 class="section-heading">Planos de Contabilidade</h2>
+            <div class="planos-grid grid">
+                <div class="card plano-card">
+                    <h3>MEI Essencial</h3>
+                    <p class="preco">R$ 89/mês</p>
                     <ul>
-                        <li>Recurso 1</li>
-                        <li>Recurso 2</li>
+                        <li>Emissão de NF-e</li>
+                        <li>Relatório Mensal</li>
+                        <li>Suporte Básico</li>
                     </ul>
-                    <a href="#" class="btn btn-primary">Escolher Plano</a>
+                    <a href="https://wa.me/5547999999999" class="btn btn-secondary">Contratar</a>
                 </div>
-                <div class="plan-card popular">
-                    <h3>Plano Profissional</h3>
-                    <p class="price">R$ 179/mês</p>
+                <div class="card plano-card popular">
+                    <span class="badge">Mais Popular</span>
+                    <h3>ME Empresarial</h3>
+                    <p class="preco">R$ 179/mês</p>
                     <ul>
-                        <li>Recurso 1</li>
-                        <li>Recurso 2</li>
-                        <li>Recurso 3</li>
+                        <li>Tudo do MEI Essencial</li>
+                        <li>Controle de Estoque</li>
+                        <li>Consultoria Avançada</li>
+                        <li>Relatórios Detalhados</li>
                     </ul>
-                    <a href="#" class="btn btn-primary">Escolher Plano</a>
+                    <a href="https://wa.me/5547999999999" class="btn btn-primary">Contratar</a>
                 </div>
-                <div class="plan-card">
-                    <h3>Plano Empresarial</h3>
-                    <p class="price">R$ 349/mês</p>
+                <div class="card plano-card">
+                    <h3>PME Premium</h3>
+                    <p class="preco">R$ 349/mês</p>
                     <ul>
-                        <li>Recurso 1</li>
-                        <li>Recurso 2</li>
-                        <li>Recurso 3</li>
-                        <li>Recurso 4</li>
+                        <li>Tudo do ME Empresarial</li>
+                        <li>Planejamento Tributário</li>
+                        <li>Análise Financeira Completa</li>
+                        <li>Suporte Prioritário</li>
                     </ul>
-                    <a href="#" class="btn btn-primary">Escolher Plano</a>
+                    <a href="https://wa.me/5547999999999" class="btn btn-secondary">Contratar</a>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section id="captacao" class="captacao section">
+        <div class="container">
+            <h2 class="section-heading">Abertura e Regularização de Empresa</h2>
+            <p>Precisa abrir ou regularizar sua empresa? Oferecemos serviços completos para formalização e adequação fiscal, garantindo conformidade e tranquilidade.</p>
+            <a href="https://wa.me/5547999999999" class="btn btn-primary">Solicitar Orçamento</a>
         </div>
     </section>
 
     <section id="contato" class="contato section">
         <div class="container">
             <h2 class="section-heading">Entre em Contato</h2>
-            <p>Pronto para começar? Fale conosco via WhatsApp.</p>
-            <a href="https://wa.me/5511999999999" class="btn btn-secondary">Falar no WhatsApp</a>
+            <form class="contato-form" action="#" method="post">
+                <div class="form-group">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" name="telefone" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+            </form>
         </div>
     </section>
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 TQS Serviços Contábeis. Todos os direitos reservados.</p>
-            <ul>
-                <li><a href="#">Política de Privacidade</a></li>
-                <li><a href="#">Termos de Uso</a></li>
-            </ul>
+            <p>&copy; 2023 TQS Serviços Contábeis. Todos os direitos reservados.</p>
+            <p>Contato: (47) 99999-9999 | contato@tqscontabilidade.com.br</p>
         </div>
     </footer>
 
-    <a href="https://wa.me/5511999999999" class="whatsapp-float btn btn-primary">WhatsApp</a>
+    <a href="https://wa.me/5547999999999" class="whatsapp-float" aria-label="Contato via WhatsApp">💬</a>
 
-    <script src="./scripts/main.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
 </html>

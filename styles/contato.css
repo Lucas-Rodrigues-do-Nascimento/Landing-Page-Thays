@@ -1,6 +1,24 @@
 /* styles/contato.css */
-.contato {
-    background-color: var(--primary-color);
-    color: var(--background-color);
-    text-align: center;
+.contato-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--secondary-bg);
+    border-radius: var(--border-radius);
+    font-family: var(--font-body);
 }

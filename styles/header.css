@@ -1,38 +1,47 @@
 /* styles/header.css */
-header {
-    background-color: var(--primary-color);
-    color: var(--background-color);
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
+.header {
+    position: sticky;
     top: 0;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
     z-index: 1000;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--secondary-bg);
 }
 
-header .container {
+.header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.logo {
+.logo img {
     height: 50px;
 }
 
-nav ul {
-    list-style: none;
+.nav ul {
     display: flex;
+    list-style: none;
 }
 
-nav ul li {
-    margin-left: 20px;
+.nav li {
+    margin-left: 2rem;
 }
 
-nav ul li a {
-    color: var(--background-color);
+.nav a {
+    color: var(--primary-color);
     text-decoration: none;
+    font-weight: bold;
 }
 
-nav ul li a:hover {
-    color: var(--secondary-color);
+.nav a:hover {
+    color: var(--accent-color);
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
 }
