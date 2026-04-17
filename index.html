@@ -5,169 +5,145 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TQS Serviços Contábeis - Contabilidade Profissional e Confiável</title>
-    <link rel="stylesheet" href="styles/global.css">
-    <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/hero.css">
-    <link rel="stylesheet" href="styles/servicos.css">
-    <link rel="stylesheet" href="styles/planos.css">
-    <link rel="stylesheet" href="styles/contato.css">
-    <link rel="stylesheet" href="styles/footer.css">
-    <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
     <header class="header">
         <div class="container">
             <div class="logo">
-                <img src="./assets/logo.png" alt="Logo TQS Serviços Contábeis">
+                <img src="./assets/logo%202.png" alt="TQS Serviços Contábeis">
             </div>
             <nav class="nav">
                 <ul>
-                    <li><a href="#hero">Início</a></li>
+                    <li><a href="#hero">Home</a></li>
                     <li><a href="#servicos">Serviços</a></li>
                     <li><a href="#planos">Planos</a></li>
-                    <li><a href="#captacao">Abertura de Empresa</a></li>
                     <li><a href="#contato">Contato</a></li>
+                    <li><a href="https://wa.me/5547988456330" class="btn btn-whatsapp-header">WhatsApp</a></li>
                 </ul>
             </nav>
             <button class="menu-toggle" aria-label="Toggle menu">☰</button>
         </div>
     </header>
 
-    <section id="hero" class="hero section">
+    <section class="hero" id="hero">
         <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">Cresça seu negócio com tranquilidade contábil</h1>
-                <p class="hero-subtitle">Serviços contábeis profissionais para MEI, empresas e empreendedores. Simplifique sua gestão financeira e foque no que realmente importa.</p>
-                <a href="https://wa.me/554788456330" class="btn btn-primary">Fale Conosco no WhatsApp</a>
-            </div>
-            <div class="hero-cards grid">
+            <h1>Contabilidade Inteligente para sua Empresa Crescer</h1>
+            <p>Atendimento especializado para MEIs, prestadores de serviço e pequenas e médias empresas.</p>
+            <div class="cards">
                 <div class="card">
-                    <h3>Sou MEI / Prestador de Serviços</h3>
-                    <p>Contabilidade simples e acessível para microempreendedores individuais.</p>
-                    <a href="#planos" class="btn btn-secondary">Ver Planos</a>
+                    <h3>Sou Prestador de Serviços MEI / ME</h3>
+                    <p>Soluções simplificadas para autônomos e profissionais liberais.</p>
+                    <a href="#servicos" class="btn btn-primary">Ver Soluções</a>
                 </div>
                 <div class="card">
                     <h3>Sou Pequena ou Média Empresa</h3>
-                    <p>Soluções completas para gestão contábil de empresas em crescimento.</p>
-                    <a href="#planos" class="btn btn-secondary">Ver Planos</a>
+                    <p>Suporte completo para empresas em crescimento.</p>
+                    <a href="#servicos" class="btn btn-primary">Ver Soluções</a>
                 </div>
                 <div class="card">
                     <h3>Preciso de um Serviço Específico</h3>
-                    <p>Serviços avulsos para necessidades pontuais, como abertura ou regularização.</p>
-                    <a href="#servicos" class="btn btn-secondary">Ver Serviços</a>
+                    <p>Abertura, encerramento, IRPF e regularizações.</p>
+                    <a href="#landing" class="btn btn-primary">Escolher</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="servicos" class="servicos section">
+    <section class="section" id="servicos">
         <div class="container">
             <h2 class="section-heading">Nossos Serviços</h2>
-            <div class="servicos-blocks">
-                <div class="servicos-block">
+            <div class="services-grid">
+                <div class="service-box">
                     <h3>Serviços Avulsos</h3>
                     <ul>
-                        <li>Abertura de Empresa</li>
-                        <li>Regularização Fiscal</li>
-                        <li>Consultoria Tributária</li>
-                        <li>Declarações Específicas</li>
+                        <li>Abertura de empresa</li>
+                        <li>Encerramento de empresa</li>
+                        <li>Imposto de renda</li>
+                        <li>Regularização fiscal</li>
+                        <li>Consultoria tributária</li>
                     </ul>
                 </div>
-                <div class="servicos-block">
+                <div class="service-box">
                     <h3>Contabilidade Mensal</h3>
                     <ul>
-                        <li>Emissão de Notas Fiscais</li>
-                        <li>Controle de Receitas e Despesas</li>
-                        <li>Relatórios Financeiros</li>
-                        <li>Atendimento Personalizado</li>
+                        <li>Escrita fiscal</li>
+                        <li>Contabilidade mensal</li>
+                        <li>Folha de pagamento</li>
+                        <li>Emissão de guias</li>
+                        <li>Suporte consultivo</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="planos" class="planos section">
+    <section class="section" id="planos">
         <div class="container">
-            <h2 class="section-heading">Planos de Contabilidade</h2>
-            <div class="planos-grid grid">
-                <div class="card plano-card">
+            <h2 class="section-heading">Planos com Preços</h2>
+            <div class="plans-grid">
+                <div class="plan">
                     <h3>MEI Essencial</h3>
-                    <p class="preco">R$ 89/mês</p>
-                    <ul>
-                        <li>Emissão de NF-e</li>
-                        <li>Relatório Mensal</li>
-                        <li>Suporte Básico</li>
-                    </ul>
-                    <a href="https://wa.me/5547999999999" class="btn btn-secondary">Contratar</a>
+                    <div class="price">R$ 100/mês</div>
+                    <p>Emissão DAS, declaração anual e suporte básico.</p>
+                    <a href="https://wa.me/5547988456330" class="btn btn-primary">Contratar</a>
                 </div>
-                <div class="card plano-card popular">
-                    <span class="badge">Mais Popular</span>
+                <div class="plan popular">
+                    <div class="tag">Mais Popular</div>
                     <h3>ME Empresarial</h3>
-                    <p class="preco">R$ 179/mês</p>
-                    <ul>
-                        <li>Tudo do MEI Essencial</li>
-                        <li>Controle de Estoque</li>
-                        <li>Consultoria Avançada</li>
-                        <li>Relatórios Detalhados</li>
-                    </ul>
-                    <a href="https://wa.me/554788456330" class="btn btn-primary">Contratar</a>
+                    <div class="price">R$ 179/mês</div>
+                    <p>Escrita fiscal, guias, contabilidade mensal e suporte.</p>
+                    <a href="https://wa.me/5547988456330" class="btn btn-primary">Contratar</a>
                 </div>
-                <div class="card plano-card">
+                <div class="plan">
                     <h3>PME Premium</h3>
-                    <p class="preco">R$ 349/mês</p>
-                    <ul>
-                        <li>Tudo do ME Empresarial</li>
-                        <li>Planejamento Tributário</li>
-                        <li>Análise Financeira Completa</li>
-                        <li>Suporte Prioritário</li>
-                    </ul>
-                    <a href="https://wa.me/5547988456330" class="btn btn-secondary">Contratar</a>
+                    <div class="price">R$ 349/mês</div>
+                    <p>Gestão completa, folha, obrigações e consultoria avançada.</p>
+                    <a href="https://wa.me/5547988456330" class="btn btn-primary">Contratar</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="captacao" class="captacao section">
+    <section class="cta" id="contato">
         <div class="container">
-            <h2 class="section-heading">Abertura e Regularização de Empresa</h2>
-            <p>Precisa abrir ou regularizar sua empresa? Oferecemos serviços completos para formalização e adequação fiscal, garantindo conformidade e tranquilidade.</p>
-            <a href="https://wa.me/5547988456330" class="btn btn-primary">Solicitar Orçamento</a>
+            <h2 class="section-heading">Fale Diretamente com a TQS</h2>
+            <p>Atendimento rápido e direto pelo WhatsApp. Tire dúvidas, solicite orçamento e fale com um especialista agora mesmo.</p>
+            <div class="cta-actions">
+                <a href="https://wa.me/5547988456330" class="btn btn-primary">Falar no WhatsApp</a>
+                <a href="https://wa.me/5547988456330" class="btn btn-primary">Solicitar Orçamento</a>
+            </div>
         </div>
     </section>
 
-    <section id="contato" class="contato section">
+    <section class="section" id="landing">
         <div class="container">
-            <h2 class="section-heading">Entre em Contato</h2>
-            <form class="contato-form" action="#" method="post">
-                <div class="form-group">
-                    <label for="nome">Nome</label>
-                    <input type="text" id="nome" name="nome" required>
+            <h2 class="section-heading">Abra sua Empresa com Segurança</h2>
+            <p class="landing-subtitle">Landing page focada em captação: atraia novos clientes com uma oferta objetiva para abertura e regularização de empresas.</p>
+            <div class="cards">
+                <div class="card">
+                    <h3>Abertura Rápida</h3>
+                    <p>Processo simplificado e acompanhamento completo.</p>
                 </div>
-                <div class="form-group">
-                    <label for="email">E-mail</label>
-                    <input type="email" id="email" name="email" required>
+                <div class="card">
+                    <h3>Consultoria Inicial Gratuita</h3>
+                    <p>Entenda o melhor enquadramento para seu negócio.</p>
                 </div>
-                <div class="form-group">
-                    <label for="telefone">Telefone</label>
-                    <input type="tel" id="telefone" name="telefone" required>
+                <div class="card">
+                    <h3>Atendimento Personalizado</h3>
+                    <p>Suporte direto com especialista TQS.</p>
                 </div>
-                <div class="form-group">
-                    <label for="mensagem">Mensagem</label>
-                    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
-            </form>
+            </div>
         </div>
     </section>
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 TQS Serviços Contábeis. Todos os direitos reservados.</p>
-            <p>Contato: (47) 47 98845-6330 | contato@tqscontabilidade.com.br</p>
+            <p>&copy; 2026 TQS Contabilidade - Todos os direitos reservados.</p>
         </div>
     </footer>
 
-    <a href="https://wa.me/5547988456330" class="whatsapp-float" aria-label="Contato via WhatsApp">💬</a>
+    <a class="whatsapp-float" href="https://wa.me/5547988456330" target="_blank" rel="noopener noreferrer">WhatsApp</a>
 
     <script src="scripts/main.js"></script>
 </body>

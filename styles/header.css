@@ -2,46 +2,99 @@
 .header {
     position: sticky;
     top: 0;
-    background: rgba(255, 255, 255, 0.9);
-    backdrop-filter: blur(10px);
     z-index: 1000;
-    padding: 1rem 0;
-    border-bottom: 1px solid var(--secondary-bg);
+    background: var(--white);
+    color: var(--primary-color);
+    border-bottom: 1px solid rgba(13, 27, 42, 0.12);
 }
 
 .header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 14px 32px;
+    padding-left: 330px;
+    min-height: 88px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
+    gap: 1.5rem;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    left: 32px;
+    top: 66%;
+    transform: translateY(-50%);
+    z-index: 2;
+    pointer-events: none;
 }
 
 .logo img {
-    height: 50px;
+    height: 271px;
+    width: auto;
+    display: block;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
 }
 
 .nav ul {
-    display: flex;
     list-style: none;
-}
-
-.nav li {
-    margin-left: 2rem;
+    display: flex;
+    gap: 18px;
+    align-items: center;
 }
 
 .nav a {
-    color: var(--primary-color);
     text-decoration: none;
-    font-weight: bold;
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0;
 }
 
-.nav a:hover {
-    color: var(--accent-color);
+.nav a::after {
+    display: none;
+}
+
+.nav a:hover::after,
+.nav a:focus-visible::after {
+    width: 100%;
 }
 
 .menu-toggle {
     display: none;
-    background: none;
-    border: none;
-    font-size: 1.5rem;
+    background: rgba(13, 27, 42, 0.06);
+    color: var(--primary-color);
+    border: 1px solid rgba(13, 27, 42, 0.2);
+    border-radius: 12px;
+    font-size: 22px;
     cursor: pointer;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 26px rgba(0, 0, 0, 0.06);
+    transition: transform 0.15s ease, background-color 0.15s ease;
+}
+
+.menu-toggle:hover {
+    transform: translateY(-1px);
+}
+
+.nav.active {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-whatsapp-header {
+    background: var(--accent-color);
+    color: var(--white) !important;
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-weight: 700;
 }

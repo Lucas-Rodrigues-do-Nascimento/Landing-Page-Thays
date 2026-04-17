@@ -2,8 +2,12 @@
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (!target) {
+            return;
+        }
         e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
+        target.scrollIntoView({
             behavior: 'smooth'
         });
     });
@@ -13,16 +17,17 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 const menuToggle = document.querySelector('.menu-toggle');
 const nav = document.querySelector('.nav');
 
-menuToggle.addEventListener('click', () => {
-    nav.classList.toggle('active');
-});
+if (menuToggle && nav) {
+    menuToggle.addEventListener('click', () => {
+        nav.classList.toggle('active');
+    });
+}
 
-// Header adjustment on scroll
-window.addEventListener('scroll', () => {
-    const header = document.querySelector('.header');
-    if (window.scrollY > 100) {
-        header.style.padding = '0.5rem 0';
-    } else {
-        header.style.padding = '1rem 0';
-    }
+// Close the mobile menu after clicking a link
+document.querySelectorAll('.nav a[href^="#"]').forEach((link) => {
+    link.addEventListener('click', () => {
+        if (nav && nav.classList.contains('active')) {
+            nav.classList.remove('active');
+        }
+    });
 });

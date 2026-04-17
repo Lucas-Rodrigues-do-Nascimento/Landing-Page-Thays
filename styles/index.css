@@ -1,0 +1,9 @@
+/* styles/index.css */
+@import "./global.css";
+@import "./header.css";
+@import "./hero.css";
+@import "./servicos.css";
+@import "./planos.css";
+@import "./contato.css";
+@import "./footer.css";
+@import "./responsive.css";

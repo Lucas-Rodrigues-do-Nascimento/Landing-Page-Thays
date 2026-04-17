@@ -1,15 +1,18 @@
 /* styles/global.css */
 :root {
-    --primary-color: #003366; /* Azul-marinho profundo */
-    --accent-color: #D4AF37; /* Dourado elegante */
-    --background-color: #FFFFFF; /* Branco */
-    --secondary-bg: #F8F9FA; /* Cinza muito claro */
-    --text-color: #333333;
-    --font-heading: 'Georgia', serif;
-    --font-body: 'Arial', sans-serif;
-    --border-radius: 8px;
-    --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --primary-color: #0d1b2a;
+    --accent-color: #c9a227;
+    --background-color: #ffffff;
+    --secondary-bg: #f8f9fb;
+    --white: #ffffff;
+    --text-color: #1c1c1c;
+    --font-heading: "Arial", sans-serif;
+    --font-body: "Arial", sans-serif;
+    --border-radius: 14px;
+    --shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    --shadow-soft: 0 10px 24px rgba(0, 0, 0, 0.12);
     --spacing-unit: 1rem;
+    --focus-ring: 0 0 0 4px rgba(201, 162, 39, 0.35);
 }
 
 * {
@@ -18,11 +21,37 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: var(--font-body);
     color: var(--text-color);
     line-height: 1.6;
-    background-color: var(--background-color);
+    background: var(--secondary-bg);
+}
+
+body,
+input,
+textarea,
+button {
+    font-family: var(--font-body);
+}
+
+p,
+li {
+    text-align: center;
+}
+
+a {
+    color: inherit;
+}
+
+:focus-visible {
+    outline: none;
+    box-shadow: var(--focus-ring);
+    border-radius: 8px;
 }
 
 .container {
@@ -32,60 +61,105 @@ body {
 }
 
 .section {
-    padding: 4rem 0;
+    padding: 60px 0;
 }
 
 .section-heading {
     font-family: var(--font-heading);
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: var(--primary-color);
     text-align: center;
-    margin-bottom: 2rem;
-}
-
-.grid {
-    display: grid;
-    gap: 2rem;
+    margin-bottom: 30px;
+    font-weight: 700;
 }
 
 .card {
     background: var(--background-color);
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
-    padding: 2rem;
+    padding: 25px;
     text-align: center;
-    transition: transform 0.3s ease;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-soft);
+}
+
+.service-box,
+.plan {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.service-box:hover,
+.plan:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-soft);
 }
 
 .btn {
-    display: inline-block;
-    padding: 0.75rem 1.5rem;
-    border-radius: var(--border-radius);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 18px;
+    border-radius: 8px;
     text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
+    font-weight: 700;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border: 1px solid transparent;
+    user-select: none;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+}
+
+.cards .btn,
+.plans-grid .btn {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .btn-primary {
     background-color: var(--primary-color);
-    color: var(--background-color);
+    color: var(--white);
 }
 
 .btn-primary:hover {
     background-color: var(--accent-color);
+    color: var(--white);
 }
 
 .btn-secondary {
-    background-color: var(--secondary-bg);
-    color: var(--primary-color);
-    border: 1px solid var(--primary-color);
+    background-color: var(--accent-color);
+    color: var(--white);
+    border: 1px solid transparent;
 }
 
 .btn-secondary:hover {
-    background-color: var(--primary-color);
-    color: var(--background-color);
+    background-color: #b58f1f;
+    color: var(--white);
+}
+
+.whatsapp-float {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background: #25D366;
+    color: var(--white);
+    padding: 14px 18px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 700;
+    box-shadow: var(--shadow-soft);
+    border: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    z-index: 999;
+}
+
+.whatsapp-float:hover {
+    transform: translateY(-3px);
 }

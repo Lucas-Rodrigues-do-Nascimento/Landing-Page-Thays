@@ -1,32 +1,50 @@
 /* styles/planos.css */
-.planos-grid {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+.plans-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: stretch;
 }
 
-.plano-card {
-    position: relative;
-}
-
-.plano-card.popular {
-    border: 2px solid var(--accent-color);
-    transform: scale(1.05);
-}
-
-.badge {
-    position: absolute;
-    top: -10px;
-    left: 50%;
-    transform: translateX(-50%);
-    background: var(--accent-color);
-    color: var(--primary-color);
-    padding: 0.5rem;
+.plan {
+    background: var(--white);
     border-radius: var(--border-radius);
-    font-weight: bold;
+    box-shadow: var(--shadow);
+    padding: 25px;
+    width: 280px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 320px;
 }
 
-.preco {
-    font-size: 2rem;
-    font-weight: bold;
+.popular {
+    border: 2px solid var(--accent-color);
+}
+
+.tag {
+    display: inline-block;
+    background: var(--accent-color);
+    color: var(--white);
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 30px;
+    font-weight: 700;
     color: var(--accent-color);
-    margin: 1rem 0;
+    margin: 10px 0;
+}
+
+.plan p {
+    margin-bottom: 16px;
+}
+
+.plan .btn {
+    margin-top: auto;
+    align-self: center;
 }
