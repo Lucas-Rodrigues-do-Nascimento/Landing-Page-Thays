@@ -1,18 +1,14 @@
 /* styles/responsive.css */
 @media (max-width: 768px) {
     .header .container {
-        padding: 12px 16px;
-        padding-left: 190px;
-        min-height: 74px;
+        padding: 6px 16px;
+        min-height: 76px;
         flex-wrap: wrap;
     }
 
-    .logo {
-        left: 16px;
-    }
-
     .logo img {
-        height: 146px;
+        height: 60px;
+        max-width: min(220px, 58vw);
     }
 
     .nav {
